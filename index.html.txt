@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Handini</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #1e293b, #0f172a);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+      border-radius: 18px;
+      padding: 32px;
+      max-width: 420px;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+    img {
+      width: 220px;
+      border-radius: 14px;
+      margin-bottom: 18px;
+    }
+    h1 {
+      color: #f472b6;
+      margin-bottom: 14px;
+    }
+    p {
+      line-height: 1.6;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="foto.jpg" alt="Handini Butar Butar">
+    <h1>Happy Birthday<br>Handini Butar Butar</h1>
+    <p>
+      selamat ulang tahun pacarkuuu yang sangattt manisss dan cantikkkk,
+      semoga panjang umur, sehar selalu, murah rezeki, dan semua rencana kamu dimudahkan Tuhan, Aminnnnn.
+      Dikurangi pesimisnya ya sayanggg, ga boleh insecure.
+      Maaf ya, saat ulang tahun kamu aku ga bisa dateng ke Malang, maaf kita juga ga bisa natalan bareng sayanggg.
+      aku sayangggg kali sama kamu, Handini ga jamet kok, tetap jadi panutanku yang super duper kerenn dan hebat.
+      <br><br>
+      I Love you sayangggg 🌸
+    </p>
+  </div>
+
+</body>
+</html>
