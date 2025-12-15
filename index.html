@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Happy Birthday Handini</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       margin: 0;
@@ -15,6 +16,7 @@
       align-items: center;
       color: white;
     }
+
     .card {
       background: rgba(255, 255, 255, 0.08);
       backdrop-filter: blur(10px);
@@ -24,46 +26,74 @@
       text-align: center;
       box-shadow: 0 20px 40px rgba(0,0,0,0.3);
     }
+
     img {
       width: 220px;
       border-radius: 14px;
       margin-bottom: 18px;
     }
+
     h1 {
       color: #f472b6;
       margin-bottom: 14px;
+      font-size: 22px;
     }
+
     p {
       line-height: 1.6;
-      font-size: 15px;
+      font-size: 14.5px;
+    }
+
+    .music-btn {
+      margin-top: 18px;
+      padding: 10px 22px;
+      border-radius: 20px;
+      border: none;
+      background: #f472b6;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .music-btn:hover {
+      background: #ec4899;
     }
   </style>
 </head>
+
 <body>
-  <audio id="bg-music" autoplay loop>
-  <source src="bestpart.mp3" type="audio/mpeg">
-</audio>
 
-<script>
-  const music = document.getElementById("bg-music");
-  music.volume = 0.4;
-</script>
-
+  <!-- AUDIO -->
+  <audio id="bg-music" loop>
+    <source src="bestpart.mp3" type="audio/mpeg">
+  </audio>
 
   <div class="card">
     <img src="foto.jpg" alt="Handini Butar Butar">
+
     <h1>Happy Birthday<br>Handini Butar Butar</h1>
+
     <p>
-      selamat ulang tahun pacarkuuu yang sangattt manisss dan cantikkkk,
-      semoga panjang umur, sehar selalu, murah rezeki, dan semua rencana kamu dimudahkan Tuhan, Aminnnnn.
+      selamat ulang tahun pacarkuuu yang sangattt manisss dan cantikkkk, semoga panjang umur, sehar selalu, murah rezeki, dan semua rencana kamu dimudahkan Tuhan, Aminnnnn.
       Dikurangi pesimisnya ya sayanggg, ga boleh insecure.
       Maaf ya, saat ulang tahun kamu aku ga bisa dateng ke Malang, maaf kita juga ga bisa natalan bareng sayanggg.
       aku sayangggg kali sama kamu, Handini ga jamet kok, tetap jadi panutanku yang super duper kerenn dan hebat.
       <br><br>
       I Love you sayangggg 🌸
     </p>
+
+    <button class="music-btn" onclick="playMusic()">
+      ▶ Play our song
+    </button>
   </div>
+
+  <script>
+    function playMusic() {
+      const music = document.getElementById("bg-music");
+      music.volume = 0.4;
+      music.play();
+    }
+  </script>
 
 </body>
 </html>
-
